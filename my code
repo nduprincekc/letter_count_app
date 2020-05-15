@@ -1,0 +1,25 @@
+
+def func():
+    print('welcome to my letter count app')
+    mess =input('Please enter your name: ').title().strip()
+    print('Hello','\n'+ mess ,'how are you doing')
+    print('i will count the number of letters in your messages')
+    message =input(('write out the message you like: '))
+    letter= (input('please enter the letter youn want to count'))
+    message = message.lower()
+    letter = letter.lower()
+    letter_count = message.count(letter)
+    print('in your message', 'the letter',letter, 'appear', (letter_count), 'times \n')
+
+
+func()
+
+user_input =input('do you want to try again: press y for yes or no for exit: ' )
+if user_input == 'y'.lower():
+    func()
+else:
+    exit()
+
+
+
+# my first app coded by me... we must get there _---___ 15th may,2019
